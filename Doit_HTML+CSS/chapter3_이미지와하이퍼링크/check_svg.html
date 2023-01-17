@@ -1,0 +1,16 @@
+<!--Modernizr : 브라우저에서 해당 기능을 제공하는지 확인하기-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Insert SVG</title>
+    <script src="modernizr-custom.js"></script>
+</head>
+<body>
+    <h1>SVG 이미지 삽입하기</h1>
+    <img src="./images/muffin.svg">
+    <script>
+        if (!Modernizr.svg) {
+            $("img").attr("src", "./images/muffing.png");
+        }
+    </script>
+</body>
