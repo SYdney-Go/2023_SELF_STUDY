@@ -1,0 +1,45 @@
+<!-- aria-describedby : 문장을 연결해서 표를 설명하는 속성-->
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+      }
+    th {
+        padding:15px;   /* 셀 테두리와 내용 사이의 간격(패딩) */
+    }
+    tr > td:nth-child(odd) { 
+        width:150px;  /* 홀수번째 열의 너비 : 150px */
+    }
+    tr > td:nth-child(even) { 
+        width:200px;  /* 짝수번째 열의 너비 : 200px */
+    }
+</style>
+
+
+<p id="summary">다음 표는 HTML5를 지원하는 모던을 정리한 것입니다. 최신버전일수록 HTML5를 더 많이 지원하기 때문에 최신 버전을 다운로드 하는 것이 좋습니다.</p>
+    <table aria-describedby="summary">
+        <caption>Modern Browser</caption>
+        <tr>
+            <th>브라우저</th>
+            <th>제조업체</th>
+            <th>다운로드</th>
+        </tr>
+        <tr>
+            <td>크롬(chrome)</td>
+            <td>Google</td>
+            <td>https://www.google.com/chrome</td>
+        </tr>
+        <tr>
+            <td>파이어폭스(FireFox)</td>
+            <td>Mozilla</td>
+            <td>https://www.mozilla.org/ko/firefox</td>
+        </tr>
+        <tr>
+            <td>엣지(<Edge>)</td>
+            <td>Microsoft</td>
+            <td>https://www.microsoft.com/ko-kr/windows/microsoft-edge</td>
+        </tr>
+    </table>
+    <figcaption>
+        표1. 브라우저 설치 정보
+    </figcaption>

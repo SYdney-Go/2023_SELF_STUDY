@@ -1,0 +1,35 @@
+<!--colspan, rowspan: 행, 렬 합치기-->
+<!--table style-->
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    th {
+        padding:15px;   /* 셀 테두리와 내용 사이의 간격(패딩) */
+    }
+    tr > td:nth-child(odd) { 
+        width:150px;  /* 홀수번째 열의 너비 : 150px */
+    }
+    tr > td:nth-child(even) { 
+        width:200px;  /* 짝수번째 열의 너비 : 200px */
+    }
+</style>
+
+<table>
+    <tr>
+        <th>이름</th>
+        <td></td>
+        <th>연락처</th>
+        <td></td>
+    </tr>
+    <tr>
+        <th>주소</th>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <th>자기소개</th>
+        <td colspan="3"></td>
+    </tr>
+</table>

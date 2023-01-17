@@ -1,0 +1,43 @@
+<!--caption : 표 설명-->
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+      }
+    th {
+        padding:15px;   /* 셀 테두리와 내용 사이의 간격(패딩) */
+    }
+    tr > td:nth-child(odd) { 
+        width:150px;  /* 홀수번째 열의 너비 : 150px */
+    }
+    tr > td:nth-child(even) { 
+        width:200px;  /* 짝수번째 열의 너비 : 200px */
+    }
+</style>
+
+<table>
+    <caption>
+        <strong>Modern Browser</strong>
+        <p>국내에서 자주 사용하던 모던 브라우저</p>
+    </caption>
+    <tr>
+        <th>브라우저</th>
+        <th>제조업체</th>
+        <th>다운로드</th>
+    </tr>
+    <tr>
+        <td>크롬(chrome)</td>
+        <td>Google</td>
+        <td>https://www.google.com/chrome</td>
+    </tr>
+    <tr>
+        <td>파이어폭스(FireFox)</td>
+        <td>Mozilla</td>
+        <td>https://www.mozilla.org/ko/firefox</td>
+    </tr>
+    <tr>
+        <td>엣지(<Edge>)</td>
+        <td>Microsoft</td>
+        <td>https://www.microsoft.com/ko-kr/windows/microsoft-edge</td>
+    </tr>
+</table>
