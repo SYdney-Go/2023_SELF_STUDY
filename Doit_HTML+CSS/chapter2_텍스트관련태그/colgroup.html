@@ -1,0 +1,37 @@
+<!--colgroup과 col을 이용하여 서식 지정-->
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+      }
+    th {
+        padding:15px;   /* 셀 테두리와 내용 사이의 간격(패딩) */
+    }
+    tr > td:nth-child(odd) { 
+        width:150px;  /* 홀수번째 열의 너비 : 150px */
+    }
+    tr > td:nth-child(even) { 
+        width:150px;  /* 짝수번째 열의 너비 : 150px */
+    }
+</style>
+
+<table>
+    <caption>colgroup 연습</caption>
+    <colgroup>
+        <col>
+        <col span="2" style="background-color:aquamarine">
+        <col style="background-color:coral">
+    </colgroup>
+    <tr>
+        <td>-</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
