@@ -1,0 +1,22 @@
+<!--label+checkbox, radio : 글자로도 선택 가능-->
+
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
+
+<form>
+    <h3>수강 분야(다수 선택 가능)</h3>
+    <ul>
+        <li><input type="checkbox" value="grm">문법</li>
+        <li><input type="checkbox" value="wr">작문</li>
+        <li><input type="checkbox" value="rd">독해</li>
+    </ul>
+    <h3>수강 과목(1과목만 선택 가능)</h3>
+    <ul>
+        <li><label><input type="radio" name="subject" value="eng">영어회화</label></li>
+        <li><label><input type="radio" name="subject" value="ch">중국어회화</label></li>
+        <li><label><input type="radio" name="subject" value="jp">일어회화</label></li>
+    </ul>
+</form>
