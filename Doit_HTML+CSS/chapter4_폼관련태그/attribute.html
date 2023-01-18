@@ -1,0 +1,24 @@
+<!--input type text: autofocus, required, placeholder-->
+<!--input type number: min, max, step-->
+
+<h3>여름방학 특강 신청</h3>
+<form>
+    <fieldset>
+        <legend>수강과목</legend>
+        <label style="color:green">영어회화<input type="text" value="오전 9:00 ~ 11:00" readonly></label>
+    </fieldset>
+    <fieldset>
+        <legend>신청자</legend>
+        <ul>
+            <li style="list-style-type: none";>
+                <label style="color:green">이름<input type="text" autofocus required></label>
+            </li>
+            <li style="list-style-type: none";>
+                <label style="color:green">학번<input type="text" placeholder="하이픈없이 입력"></label>
+            </li>
+            <li style="list-style-type: none";>
+                <label style="color:green">학과<input type="number" value="10" min="0" max="100" step="10"></label>
+            </li>
+        </ul>
+    </fieldset>
+</form>
