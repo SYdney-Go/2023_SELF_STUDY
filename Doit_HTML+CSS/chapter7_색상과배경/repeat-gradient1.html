@@ -1,0 +1,37 @@
+<!-- background repeating-linear-gradient(color, color thickness)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            width:400px;
+            height: 250px;
+            border: 1px solid black;
+            margin: 10px auto;
+        }
+        .div1{
+            background: repeating-linear-gradient(yellow, red 20px);
+        }
+        .div2{
+            background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px)
+        }
+        .div3{
+            background: repeating-radial-gradient(gray, white 20px)
+        }
+        .div4{
+            background: repeating-radial-gradient(gray, gray 20px, white 20px, white 60px)
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</body>
+</html>
