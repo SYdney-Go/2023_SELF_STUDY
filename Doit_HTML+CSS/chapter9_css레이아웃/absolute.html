@@ -1,0 +1,40 @@
+<!-- position: (parent: relative) + absolute + top/bottom + left/right-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrap{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        .box{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: paleturquoise;
+        }
+        #crd1{ top:0; left:0;}
+        #crd2{ top:0; right:0;}
+        #crd3{ bottom:0; left:0;}
+        #crd4{ bottom:0; right:0;}
+        #crd5{ top:100px; left:200px;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box" id="crd1"></div>
+        <div class="box" id="crd2"></div>
+        <div class="box" id="crd3"></div>
+        <div class="box" id="crd4"></div>
+        <div class="box" id="crd5"></div>
+    </div>
+</body>
+</html>
