@@ -1,0 +1,36 @@
+<!--[속성|=값] : 값이 있는 요소, -연결 포함 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul li{
+            display: inline-block;
+            padding: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+        a[title |= "us"] {
+            background: url(images/us.png) no-repeat left center;
+            padding: 5px 25px;
+        }
+        a[title |= "jap"]{
+            background: url(images/jp.png) no-repeat left center;
+            padding: 5px 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>외국어 서비스 : </li>
+        <li><a href="#" title="us">영어</a></li>
+        <li><a href="#" title="us-english">영어</a></li>
+        <li><a href="#" title="japanese">일본어</a></li>
+    </ul>
+</body>
+</html>

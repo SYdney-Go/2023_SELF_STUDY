@@ -1,0 +1,35 @@
+<!--[속성*=값] : 어느 위치에던 해당 값이 포함되면 스타일 적용-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        li{
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+        a{
+            line-height: 30px;
+            text-decoration: none;
+        }
+        [href *= "w3s"]{
+            background: blue;
+            color: #ffffff;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML 참고 사이트</h1>
+    <p>(아래 링크 중 파란색 배경의 링크는 W3C 사이트로 연결됩니다.)</p>
+    <ul>
+        <li><a href="https://www.w3schools.com/html/">HTML 표준안 사이트</a></li>
+        <li><a href="https://webplatform.github.io/">튜토리얼과 아티클</a></li>
+        <li><a href="https://caniuse.com/">HTML 지원 여부 체크</a></li>
+        <li><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">미디어쿼리</a></li>
+    </ul>
+</body>
+</html>

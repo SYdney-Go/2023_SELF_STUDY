@@ -1,0 +1,38 @@
+<!--[속성~=값] : 값이 있는 요소, 띄어쓰기 인정 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul li {
+            display: inline-block;
+            padding: 10px;
+        }
+        a{
+            padding: 5px;
+            text-decoration: none;
+        }
+        .flat {
+            background-color: blue;
+            color: white;
+        }
+        [class ~= "button"] {
+            padding:10px 30px;
+            border: 2px solid black;
+            box-shadow: rgba(0,0,0,0.4) 5px 5px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#">메뉴 1</a></li>
+        <li><a href="#">메뉴 2</a></li>
+        <li><a href="#" class="button">메뉴 3</a></li>
+        <li><a href="#" class="flat button">메뉴 4</a></li>
+    </ul>
+</body>
+</html>
