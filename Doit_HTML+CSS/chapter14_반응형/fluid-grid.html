@@ -1,0 +1,57 @@
+<!-- %(fluid-layout)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrapper{
+            width: 96%;
+            margin: 0 auto;
+        }
+        header{
+            width: 100%;
+            height: 120px;
+            background-color: cornflowerblue;
+            overflow: hidden;
+        }
+        header h1{
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        } 
+        .content{
+            float: left;
+            width: 62.5%;
+            height: 400px;
+            padding: 1.5625%;
+            background-color: yellow;
+        }
+        .right-side {
+            float: right;
+            width: 31.25%;
+            height: 400px;
+            padding: 1.5625%;
+            background-color: green;
+        }
+        footer{
+            clear:both;
+            width: 100%;
+            background-color: brown;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header><h1>고정 그리드 레이아웃</h1></header>
+        <section class="content">
+            <p>본문</p>
+        </section>
+        <aside class="right-side">사이드바</aside>
+        <footer><p>푸터</p></footer>
+    </div>
+</body>
+</html>
