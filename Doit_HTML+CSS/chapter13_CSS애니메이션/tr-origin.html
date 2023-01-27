@@ -1,0 +1,37 @@
+<!-- rotate + transform-origin : left/right top/bottom -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .origin{
+            border: 1px solid black;
+            margin: 50px;
+            display: inline-block;
+        }
+        .rose {transform: rotateZ(10deg);}
+        .ltop .rose {transform-origin: left top;}
+        .rtop .rose {transform-origin: right top;}
+        .lbottom .rose {transform-origin: left bottom;}
+        .rbottom .rose {transform-origin: right bottom;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="origin">
+        <div class="ltop"><img src="./images/rose.jpg" class="rose"></div>
+    </div>
+    <div class="origin">
+        <div class="rtop"><img src="./images/rose.jpg" class="rose"></div>
+    </div>
+    <div class="origin">
+        <div class="lbottom"><img src="./images/rose.jpg" class="rose"></div>
+    </div>
+    <div class="origin">
+        <div class="rbottom"><img src="./images/rose.jpg" class="rose"></div>
+    </div>
+</body>
+</html>
