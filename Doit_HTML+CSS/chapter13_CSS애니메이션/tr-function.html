@@ -1,0 +1,57 @@
+<!--transition-timing-function : linear/ease/ease-in/ease-out/ease-in-out-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #ex div {
+            float:left;
+            width: 100px;
+            height: 50px;
+            margin: 5px 10px;
+            padding: 5px;
+            color: white;
+            background-color: #006aff;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        #ex:hover div{
+            height: 400px;
+        }
+        #ex .ease{
+            transition-duration: 3s;
+            transition-timing-function: ease;
+        }
+        #ex .linear{
+            transition-duration: 3s;
+            transition-timing-function: linear;
+        }
+        #ex .ease-in{
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        #ex .ease-out{
+            transition-duration: 3s;
+            transition-timing-function: ease-out;
+        }
+        #ex .ease-in-out{
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="ex">
+        <div class="ease">ease</div>
+        <div class="linear">linear</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
+    </div>  
+</body>
+</html>
