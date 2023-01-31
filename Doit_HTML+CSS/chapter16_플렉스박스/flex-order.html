@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container {
+            display: flex;
+        }
+        div[id*=box] {
+            background-color: #eee;
+            border: 1px solid black;
+            width: 200px;
+            height: 400px;
+            margin: 5px auto;
+        }
+        #box1 { order:2;}
+        #box2 { order:3;}
+        #box3 { order:1;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="box1"><h2>1</h2></div>
+        <div id="box2"><h2>2</h2></div>
+        <div id="box3"><h2>3</h2></div>
+    </div>
+</body>
+</html>
