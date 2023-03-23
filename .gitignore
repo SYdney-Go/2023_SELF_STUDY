@@ -110,6 +110,8 @@ ENV/
 env.bak/
 venv.bak/
 
+Doit_딥러닝입문/DoitDL_venv
+
 # Spyder project settings
 .spyderproject
 .spyproject
