@@ -7,6 +7,18 @@
 	<title>연습문제 1</title>
 </head>
 <body>
+	<script>
+		var num1 = parseInt(prompt("첫번째 수 : "));
+		var num2 = parseInt(prompt("두번째 수 : "));
+		var result = sumMulti(num1, num2);
+		console.log(result)
 
+		function sumMulti(a, b) {
+			if (a === b) {
+				return a * b;
+			}
+			return a + b;
+		} 
+	</script>
 </body>
 </html>
