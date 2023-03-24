@@ -11,7 +11,20 @@
 <body>
 	<script>
 		var r = prompt("원의 반지름은? (cm)");
-	
+		var calc = new Calc(r);
+		document.write("반지름이 " + r + "cm일때 <br> 원의 둘레 : 약 " + calc.len() + "cm <br> 원의 넓이 : 약 " + calc.area() + "cm2");
+
+		function Calc(r) {
+			this.r = r;
+			this.len = function() {
+				return Math.floor(2 * Math.PI * this.r);
+			}
+			this.area = function() {
+				return Math.floor(Math.PI * this.r * this.r);
+			}
+		}
+
+		
 	</script>
 </body>
 </html>
