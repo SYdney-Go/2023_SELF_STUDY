@@ -1,0 +1,62 @@
+/* navigation.css */
+
+/* navigation.css */
+
+.navigation {
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navigation li {
+    margin: 0 10px;
+  }
+  
+  .navigation li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .navigation li a:hover {
+    background-color: #555;
+  }
+  
+  /* dashboard.css */
+  
+  .dashboard-content {
+    margin-top: 70px; /* 네비게이션 영역의 높이 + 상단 여백 */
+  }
+  
+  
+  /* styles.css */
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px; /* 글시 영역의 높이를 조절할 값 */
+  }
+  
